@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login / Signup — SmartChef</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+        <i class="fas fa-utensils"></i> SmartChef
+    </a>
+    <nav>
+        <a href="login.html" id="accountLink">Login / Signup</a>
+        <button class="dark-mode-toggle" id="darkModeToggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+  </header>
+
+  <main class="container auth-page">
+    <div class="auth-card">
+      <div class="tabs">
+        <button class="tab active" data-target="login">Login</button>
+        <button class="tab" data-target="signup">Create account</button>
+      </div>
+
+      <form id="login" class="auth-form active">
+        <h2>Welcome back</h2>
+        <input id="loginEmail" type="email" placeholder="Email" required>
+        <input id="loginPassword" type="password" placeholder="Password" required>
+        <button id="loginBtn" class="btn primary">Login</button>
+        <p class="muted">No account? <a class="switch" data-target="signup">Create account</a></p>
+      </form>
+
+      <form id="signup" class="auth-form">
+        <h2>Create your account</h2>
+        <input id="signupName" type="text" placeholder="Full name" required>
+        <input id="signupEmail" type="email" placeholder="Email" required>
+        <input id="signupPassword" type="password" placeholder="Password" required>
+        <button id="signupBtn" class="btn primary">Create account</button>
+        <p class="muted">Already have account? <a class="switch" data-target="login">Login</a></p>
+      </form>
+    </div>
+
+    <aside class="auth-illustration">
+      <h3>Why join SmartChef?</h3>
+      <ul>
+        <li>Save favorites</li>
+        <li>Generate meal plans</li>
+        <li>Export shopping lists</li>
+      </ul>
+      <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=1" alt="A bowl of fresh vegetables">
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 SmartChef</p>
+  </footer>
+
+  <script defer src="script.js"></script>
+</body>
+</html>

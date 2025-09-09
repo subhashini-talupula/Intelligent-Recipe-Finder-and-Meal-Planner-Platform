@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meal Planner - Intelligent Recipe Finder and Meal Planner Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">🍽️ SmartChef</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="planner.html" id="plannerLink">Meal Planner</a>
+      <a href="login.html" id="accountLink">Login / Signup</a>
+      <div class="user-profile hidden" id="userProfile">
+        <div class="user-avatar" id="userAvatar">U</div>
+        <span id="userName">User</span>
+      </div>
+    </nav>
+  </header>
+  
+  <main class="container planner-page">
+    <h1>Weekly Meal Planner</h1>
+    <p class="muted">Select recipes for each day to plan your week.</p>
+    
+    <div class="planner-grid">
+      <aside class="planner-recipes">
+        <h3>Recipes</h3>
+        <div class="card-grid small">
+          <div class="card">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.mT2i-p4EAb_C-N2Qm5zghgHaLH?pid=Api&P=0&h=180" alt="Creamy Tomato Pasta">
+            <h4>Creamy Tomato Pasta</h4>
+            <p class="muted">pasta, tomato, cream</p>
+          </div>
+          
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=1" alt="Grilled Lemon Salmon">
+            <h4>Grilled Lemon Salmon</h4>
+            <p class="muted">salmon, lemon, garlic</p>
+          </div>
+          
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=5" alt="Avocado Toast Deluxe">
+            <h4>Avocado Toast Deluxe</h4>
+            <p class="muted">bread, avocado, chili</p>
+          </div>
+          
+          <div class="card">
+            <img src="https://healthyfitnessmeals.com/wp-content/uploads/2020/05/instagram-In-Stream_Square___Low-carb-Caesar-salad-4.jpg" alt="Chicken Caesar Salad">
+            <h4>Chicken Caesar Salad</h4>
+            <p class="muted">chicken, lettuce, parmesan</p>
+          </div>
+          
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=7" alt="Vegetable Stir Fry">
+            <h4>Vegetable Stir Fry</h4>
+            <p class="muted">broccoli, peppers, sauce</p>
+          </div>
+        </div>
+      </aside>
+      
+      <section class="weekly-planner">
+        <h2>Your Weekly Plan</h2>
+        <div class="day-grid">
+          <div class="day">
+            <h4>Monday</h4>
+            <div class="slot"></div>
+          </div>
+          
+          <div class="day">
+            <h4>Tuesday</h4>
+            <div class="slot"></div>
+          </div>
+          
+          <div class="day">
+            <h4>Wednesday</h4>
+            <div class="slot">
+              <div class="card">
+                <h4>Creamy Tomato Pasta</h4>
+                <p class="muted">pasta, tomato, cream</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="day">
+            <h4>Thursday</h4>
+            <div class="slot"></div>
+          </div>
+          
+          <div class="day">
+            <h4>Friday</h4>
+            <div class="slot"></div>
+          </div>
+          
+          <div class="day">
+            <h4>Saturday</h4>
+            <div class="slot">
+              <div class="card">
+                <h4>Avocado Toast Deluxe</h4>
+                <p class="muted">bread, avocado, chili</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="day">
+            <h4>Sunday</h4>
+            <div class="slot"></div>
+          </div>
+        </div>
+        
+        <div class="planner-actions">
+          <button class="btn" id="generateShoppingListBtn">Generate Shopping List</button>
+          <button class="btn outline" id="clearPlanBtn">Clear Plan</button>
+        </div>
+        
+        <div class="shopping-list" id="shoppingList">
+          <h3>Shopping List</h3>
+          <ul>
+            <li>Salmon</li>
+            <li>Lemon</li>
+            <li>Garlic</li>
+            <li>Pasta</li>
+            <li>Tomato sauce</li>
+            <li>Heavy cream</li>
+            <li>Bread</li>
+            <li>Avocado</li>
+            <li>Chili flakes</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+  <footer class="site-footer">
+    <p>© 2025 SmartChef</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
